@@ -324,5 +324,68 @@ main section:not(.hero-section){
     object-fit: cover;
     border-radius: var(--raio-medio);
 }
+/* =====================================================
+   6. ESPECIALIZAÇÕES
+   ===================================================== */
+ 
+/* "main section.especializacoes-section" tem a mesma força da regra geral
+   das seções, e como vem depois no arquivo, ela ganha (sem precisar de !important) */
+main section.especializacoes-section{
+    background-color: var(--bg-destaque);
+    /* essa seção é mais larga que as outras (59rem) */
+    padding: 3rem max(1.5rem, calc((100% - 59rem) / 2)) 8rem;
+}
+ 
+/* o título pequeno com linha fica mais largo aqui */
+.especializacoes-section h2{
+    width: min(100%, 37.5rem);
+    margin-bottom: 3rem;
+}
+ 
+.especializacoes-section > h3{
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+}
+ 
+.especializacoes-section ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.75rem;
+}
+ 
+.especializacoes-section article{
+    height: 100%;
+    padding: 1rem 1.75rem 1.25rem;
+    border-radius: var(--raio-grande);
+    color: var(--cor-texto-button-primario);
+}
+ 
+/* cada card com um tom de roxo, do mais escuro pro mais claro */
+.especializacoes-section li:nth-child(1) article{
+    background-color: var(--bg-roxo-escuro);
+}
+ 
+.especializacoes-section li:nth-child(2) article{
+    background-color: var(--bg-roxo-medio);
+}
+ 
+.especializacoes-section li:nth-child(3) article{
+    background-color: var(--bg-roxo-claro);
+}
+ 
+.especializacoes-section article h3{
+    font-size: .9375rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+ 
+.especializacoes-section article p{
+    font-size: .9375rem;
+    line-height: 1.25;
+    opacity: .8;
+}
+ 
  
  
