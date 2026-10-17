@@ -110,4 +110,88 @@ header ul li a{
 header ul li a:hover{
     color: var(--cor-texto-destaque);
 }
+ /* =====================================================
+   3. HERO
+   ===================================================== */
+ 
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    text-align: center;
+    min-height: 80dvh;
+    padding: 3rem 1rem;
+}
+ 
+.hero-section h2{
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: var(--cor-texto-titulo);
+    margin-bottom: 1rem;
+}
+ 
+/* deixa "musical" sozinha na linha do meio, igual no figma */
+.hero-section h2 span{
+    display: block;
+    background-image: var(--cor-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+ 
+.hero-section p{
+    color: var(--cor-texto-paragrafo);
+    line-height: 1.5;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+ 
+/* "Produtora / DJ" (primeiro parágrafo) é menorzinho */
+.hero-section p:first-of-type{
+    font-size: .875rem;
+    color: var(--cor-texto-titulo);
+    margin-bottom: .75rem;
+}
+ 
+.hero-section p:last-of-type{
+    max-width: 22rem;
+}
+ 
+.hero-section ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+ 
+/* botões do hero */
+.hero-section ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    width: 13rem;
+    height: 2.75rem;
+    border: var(--borda-button);
+    border-radius: var(--raio-botao);
+    font-size: .875rem;
+    font-weight: 600;
+    transition: .3s;
+}
+ 
+.hero-section ul li:first-child a{
+    background-color: var(--bg-button-primario);
+    color: var(--cor-texto-button-primario);
+}
+ 
+.hero-section ul li:last-child a{
+    background-color: var(--bg-button-secundario);
+    color: var(--cor-texto-button-secundario);
+}
+ 
+.hero-section ul li a:hover{
+    transform: translateY(-.125rem);
+}
  
