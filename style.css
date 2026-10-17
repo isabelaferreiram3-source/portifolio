@@ -548,6 +548,56 @@ footer nav ul li a:hover{
     font-size: .8125rem;
     color: var(--cor-texto-paragrafo);
 }
-
+/* =====================================================
+   9. RESPONSIVO
+   ===================================================== */
+ 
+@media (max-width: 800px){
+ 
+    .sobre-section,
+    .projetos-section,
+    .contato-section{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+ 
+    .sobre-section::before,
+    .projetos-section::before{
+        margin-bottom: 0;
+    }
+ 
+    /* foto vai pra cima do texto em "Na cena" */
+    .projetos-section > img{
+        order: -1;
+    }
+ 
+    .foto-perfil,
+    .projetos-section > img{
+        max-width: 25rem;
+        width: 100%;
+        justify-self: center;
+    }
+ 
+    .especializacoes-section ul{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+ 
+@media (max-width: 500px){
+ 
+    header ul{
+        gap: 1rem;
+    }
+ 
+    .hero-section ul li{
+        width: 100%;
+    }
+ 
+    .hero-section ul li a{
+        width: 100%;
+    }
+}
+ 
  
  
