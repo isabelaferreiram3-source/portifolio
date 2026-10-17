@@ -1,0 +1,70 @@
+:root{
+    --fonte-primaria: "Inter", sans-serif;
+ 
+    /* bg */
+    --bg-primario: #fff6fa;
+    --bg-secundario: #ffffff;
+    --bg-destaque: #fcf7fe;
+    --bg-card-rosa: #f6e7ee;
+    --bg-moldura: #f5e8ec;
+    --bg-formulario: #f0d8ea;
+    --bg-rodape: #f4e8f5;
+ 
+    --bg-button-primario: #c96a9e;
+    --bg-button-secundario: #ffffff;
+ 
+    --bg-roxo-escuro: #3b2a3d;
+    --bg-roxo-medio: #593e61;
+    --bg-roxo-claro: #7d5a86;
+ 
+    /* bordas */
+    --borda-button: .0625rem solid #c96a9e;
+    --borda-header: .0625rem solid #ece2e8;
+    --borda-linha: .0625rem solid #ead7e3;
+    --borda-card: .0625rem solid #f0dfe8;
+    --borda-formulario: .0625rem solid #d56fb0;
+ 
+    /* textos */
+    --cor-texto-button-primario: #ffffff;
+    --cor-texto-button-secundario: #a84f8c;
+ 
+    --cor-texto-paragrafo: #6f6675;
+    --cor-texto-titulo: #2b2330;
+    --cor-texto-destaque: #a84f8c;
+ 
+    --cor-gradient: linear-gradient(135deg, #e0489f, #8a4f9e);
+ 
+    /* arredondamentos */
+    --raio-pequeno: .75rem;
+    --raio-medio: 1rem;
+    --raio-grande: 1.5rem;
+    --raio-botao: 6.25rem;   /* botão em formato de pílula */
+ 
+    /* margem dos lados: deixa o conteúdo centralizado com no máximo 52rem */
+    --espaco-lateral: max(1.5rem, calc((100% - 52rem) / 2));
+}
+ 
+/* limpando estilos padrões do navegador */
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    list-style: none;
+    text-decoration: none;
+}
+ 
+html{
+    scroll-behavior: smooth !important;
+}
+ 
+body{
+    background-color: var(--bg-primario);
+    font-family: var(--fonte-primaria);
+    color: var(--cor-texto-titulo);
+}
+ 
+img{
+    max-width: 100%;
+}
