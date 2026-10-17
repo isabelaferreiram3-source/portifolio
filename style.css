@@ -386,6 +386,113 @@ main section.especializacoes-section{
     line-height: 1.25;
     opacity: .8;
 }
+/* =====================================================
+   7. CONTATO
+   ===================================================== */
  
+.contato-section{
+    display: grid;
+    grid-template-columns: 1fr 26rem;
+    align-items: center;
+    column-gap: 3rem;
+    padding-block: 5rem !important;
+}
+ 
+.contato-section > div{
+    text-align: center;
+}
+ 
+.contato-section h2{
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+ 
+.contato-section h2 span{
+    display: block;
+    color: var(--cor-texto-destaque);
+}
+ 
+.contato-section > div p{
+    max-width: 16rem;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--cor-texto-paragrafo);
+}
+ 
+/* formulário */
+.contato-section form{
+    padding: 1.75rem 1.5rem;
+    background-color: var(--bg-formulario);
+    border: var(--borda-formulario);
+    border-radius: var(--raio-grande);
+}
+ 
+.contato-section label{
+    display: block;
+    margin-bottom: .5rem;
+    font-size: .75rem;
+    font-weight: 700;
+}
+ 
+.contato-section input,
+.contato-section textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    padding: 0 1rem;
+ 
+    background-color: var(--bg-secundario);
+    border: .0625rem solid transparent;
+    border-radius: var(--raio-pequeno);
+    font-family: var(--fonte-primaria);
+    font-size: .875rem;
+    color: var(--cor-texto-titulo);
+}
+ 
+.contato-section input{
+    height: 2.75rem;
+}
+ 
+.contato-section textarea{
+    height: 6rem;
+    padding-top: .75rem;
+    resize: vertical;
+}
+ 
+.contato-section input:focus,
+.contato-section textarea:focus{
+    outline: none;
+    border-color: var(--cor-texto-destaque);
+}
+ 
+.contato-section ::placeholder{
+    color: #8f8696;
+}
+ 
+.contato-section button{
+    width: 100%;
+    height: 2.75rem;
+    margin-top: .5rem;
+ 
+    background-color: var(--bg-button-primario);
+    color: var(--cor-texto-button-primario);
+    border: var(--borda-button);
+    border-radius: var(--raio-botao);
+ 
+    font-family: var(--fonte-primaria);
+    font-size: .875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+ 
+.contato-section button:hover{
+    opacity: .85;
+}
+ 
+ 
+
  
  
