@@ -68,3 +68,46 @@ body{
 img{
     max-width: 100%;
 }
+/* =====================================================
+   2. HEADER
+   ===================================================== */
+ 
+header, header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+header{
+    padding: 1rem 1.5rem;
+    margin: .5rem;
+    background-color: var(--bg-secundario);
+    border: var(--borda-header);
+    border-radius: var(--raio-grande);
+ 
+    position: sticky;
+    top: .5rem;
+    z-index: 10;
+}
+ 
+header h1 a{
+    color: var(--cor-texto-destaque);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+}
+ 
+header ul{
+    gap: 2rem;
+}
+ 
+header ul li a{
+    font-size: 1rem;
+    color: var(--cor-texto-titulo);
+    font-weight: 500;
+}
+ 
+header ul li a:hover{
+    color: var(--cor-texto-destaque);
+}
+ 
