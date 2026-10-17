@@ -278,4 +278,51 @@ main section:not(.hero-section){
     object-fit: cover;
     border-radius: var(--raio-medio);
 }
+ /* =====================================================
+   5. SEÇÃO NA CENA (projetos)
+   ===================================================== */
+ 
+.projetos-text h2{
+    font-size: 1.75rem;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+ 
+.projetos-text > p{
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--bg-card-rosa);
+    border-radius: var(--raio-medio);
+ 
+    text-align: center;
+    font-size: .9375rem;
+    line-height: 1.5;
+    color: var(--cor-texto-paragrafo);
+}
+ 
+/* tag escura "Heliópolis / Baile de Rua" */
+.projetos-text ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    padding: .75rem;
+    background-color: var(--bg-roxo-escuro);
+    color: var(--cor-texto-button-primario);
+    border-radius: var(--raio-pequeno);
+ 
+    text-align: center;
+    font-size: .8125rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+ 
+.projetos-section > img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--raio-medio);
+}
+ 
  
