@@ -626,6 +626,22 @@ footer nav ul li a:hover {
     color: var(--cor-texto-destaque);
 }
 
+.footer-logo,
+footer nav ul li a {
+    transition: .3s;
+}
+
+.footer-logo:hover,
+.footer-logo:focus-visible {
+    opacity: .8;
+}
+
+footer nav ul li a:focus-visible {
+    color: var(--cor-texto-destaque);
+    text-decoration: underline;
+    text-underline-offset: .25rem;
+}
+
 .footer-copyright {
     font-size: .8125rem;
     color: var(--cor-texto-paragrafo);
