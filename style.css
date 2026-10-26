@@ -46,7 +46,7 @@
     /* margem dos lados: deixa o conteúdo centralizado com no máximo 52rem */
     --espaco-lateral: max(1.5rem, calc((100% - 52rem) / 2));
 
-        /* hover e foco */
+    /* hover e foco */
     --bg-button-primario-hover: #b05588;
     --borda-foco: .1875rem solid #a84f8c;
     --espaco-foco: .25rem;
@@ -75,6 +75,15 @@ body {
 
 img {
     max-width: 100%;
+}
+
+/* anel de foco: aparece só na navegação por teclado (Tab) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: var(--borda-foco);
+    outline-offset: var(--espaco-foco);
 }
 
 /* =====================================================
@@ -337,7 +346,7 @@ main section:not(.hero-section) {
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: var(--raio-medio);
-    
+
 }
 
 /* =====================================================
