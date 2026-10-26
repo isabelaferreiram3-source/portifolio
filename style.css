@@ -127,9 +127,24 @@ header ul li a {
     font-weight: 500;
 }
 
-header ul li a:hover {
-    color: var(--cor-texto-destaque);
+header h1 a,
+header ul li a {
+    border-radius: var(--raio-pequeno);
+    transition: .3s;
 }
+
+header h1 a:hover,
+header h1 a:focus-visible {
+    opacity: .8;
+}
+
+header ul li a:hover,
+header ul li a:focus-visible {
+    color: var(--cor-texto-destaque);
+    text-decoration: underline;
+    text-underline-offset: .375rem;
+}
+
 
 /* =====================================================
    3. HERO
