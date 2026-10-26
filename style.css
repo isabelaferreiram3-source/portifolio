@@ -697,3 +697,14 @@ footer nav ul li a:focus-visible {
         width: 100%;
     }
 }
+
+/* respeita quem desativou animações no sistema */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto !important;
+    }
+
+    * {
+        transition: none !important;
+    }
+}
