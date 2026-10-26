@@ -527,9 +527,18 @@ main section.especializacoes-section {
     resize: vertical;
 }
 
-.contato-section input:focus,
-.contato-section textarea:focus {
-    outline: none;
+.contato-section input,
+.contato-section textarea {
+    transition: .3s;
+}
+
+.contato-section input:hover,
+.contato-section textarea:hover {
+    border-color: #d56fb0;
+}
+
+.contato-section input:focus-visible,
+.contato-section textarea:focus-visible {
     border-color: var(--cor-texto-destaque);
 }
 
@@ -554,8 +563,13 @@ main section.especializacoes-section {
     transition: .3s;
 }
 
-.contato-section button:hover {
-    opacity: .85;
+.contato-section button:hover,
+.contato-section button:focus-visible {
+    background-color: var(--bg-button-primario-hover);
+}
+
+.contato-section button:active {
+    transform: translateY(.0625rem);
 }
 
 /* =====================================================
