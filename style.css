@@ -378,6 +378,17 @@ main section:not(.hero-section) {
 
 }
 
+.projetos-text ul li a {
+    transition: .3s;
+}
+
+.projetos-text ul li a:hover,
+.projetos-text ul li a:focus-visible {
+    background-color: var(--bg-roxo-medio);
+    transform: translateY(-.125rem);
+}
+
+
 /* =====================================================
    6. ESPECIALIZAÇÕES
    ===================================================== */
