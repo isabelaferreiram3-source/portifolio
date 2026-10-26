@@ -231,6 +231,20 @@ header ul li a:focus-visible {
     transform: translateY(-.125rem);
 }
 
+.hero-section ul li:first-child a:hover,
+.hero-section ul li:first-child a:focus-visible {
+    background-color: var(--bg-button-primario-hover);
+}
+
+.hero-section ul li:last-child a:hover,
+.hero-section ul li:last-child a:focus-visible {
+    background-color: var(--bg-card-rosa);
+}
+
+.hero-section ul li a:active {
+    transform: translateY(0);
+}
+
 /* =====================================================
    4. SEÇÃO SOBRE
    ===================================================== */
