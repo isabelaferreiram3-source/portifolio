@@ -337,6 +337,14 @@ main section:not(.hero-section) {
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: var(--raio-medio);
+
+    /* anel de foco: aparece só na navegação por teclado (Tab) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: var(--borda-foco);
+    outline-offset: var(--espaco-foco);
 }
 
 /* =====================================================
